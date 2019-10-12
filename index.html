@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Fylo landing page with dark theme and features grid</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  @import url(https://weloveiconfonts.com/api/?family=brandico|entypo|zocial);
+
+/* brandico */
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+/* zocial */
+[class*="zocial-"]:before {
+  font-family: 'zocial', sans-serif;
+}
+
+  body {background-color:  hsl(217, 28%, 15%); color: hsl(0, 0%, 100%); font-size: 14px;
+  background-image: url('images/bg-curvy-desktop.svg'); background-position: center;background-repeat: no-repeat; background-size: cover; margin:  0px 0px; font-family: 'Open Sans', sans-serif;}
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+    .display-horizontal {display: flex; flex-direction: row;}
+    ul  { justify-content: space-around; width: 40%; margin: 0px 0px 0px auto; margin-top: -20px;  }
+    li {list-style: none; width: calc((100%)/3); text-align: center;}
+     li a { text-decoration: none; color: inherit; font-family: 'Raleway', sans-serif;}
+     .center {margin: 10px auto ;}
+     .jumbotron { background-image: url("images/illustration-intro.png"); background-repeat: no-repeat; background-position: center; background-size: contain; height: 35em; width: 50%; margin-top: 20px;}
+     .header {font-size: 1.8rem; width: 75%; margin: 0px auto; }
+     .header-description {font-size: 1.1rem; width: 70%; margin: 0px auto; line-height: 20px;}
+     article.jumbotron-article { width: 50%; text-align: center; }
+     .button { background-color: hsl(176, 68%, 64%); border-radius: 20px; }
+     .features {display: flex; flex-direction: row; justify-content: space-around; width: 60%; flex-wrap: wrap; margin-top: 80px;}
+     .container { padding: 20px; width: 45%; margin-bottom: 20px; }
+     .content-header {font-size: 1.2rem; text-align: center;}
+     .content-header-description {font-size: .9rem; text-align: center;}
+     .container img {margin-left: 39%;}
+     .sample-description { display: flex;flex-direction: row; width: 80%; }
+     .sample-description .description { padding: 20px; }
+     .review {display: flex;flex-direction: row; position: relative;  width: 80%; justify-content: space-between; margin-top: 40px; }
+
+     .review > img { position: absolute; left: -40px; top: -20px; margin-bottom: 200px;}
+     .review-container { width: 30%; background-color: hsl(219, 30%, 18%); padding: 20px; box-sizing: border-box; }
+     .review-container img { border-radius: 50%;  height: 40px;}
+     .footer {background-color:  hsl(216, 53%, 9%); margin-top: 200px; box-sizing: border-box; padding-top: 200px; z-index: 1;}
+     .footer-section div { width: 25%; text-align: center;}
+     .footer-section { margin-top: ; margin-left: 100px;  }
+     .footer-links {display: flex; flex-direction: row; flex-wrap: wrap; }
+     .footer-links p { width: 50%; }
+     .sign-up { width: 60%; background-color:  hsl(219, 30%, 18%); }
+     .footer-icons a { color: hsl(0, 0%, 100%); text-decoration: none; font-size: 1.4rem; }
+     .footer-contact div {width: 100%;}
+     @media screen and (max-width: 650px) {
+      .footer-section {}
+      .footer-section div {flex-direction: column; width: 100%;}
+     }
+  </style>
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+   
+</head>
+<body>
+      <header class="top-box">
+        <nav>
+           <div class="footer-div"><span class="zocial-buffer" style="font-size: 2.2rem; margin: 0px 5px 0px calc(8% + 0px);"></span><span style="font-size: 1.8rem; font-weight: bold;">Fylo</span> </div>
+
+          <ul class="display-horizontal">
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">Sign In</a></li>
+          </ul>
+        </nav>
+      </header>
+      <div class="center jumbotron">
+        </div>
+        <article class="center jumbotron-article">
+          
+          <p class="header "> All your files in one secure location available anywhere</p><br><br>
+          <p class="header-description">We store all your most important files in one location. Access them and share them whenever you need them. Share them and collaborate with family and co-workers.<p>
+          <button class="button center">Get Started</button>
+        </article>
+
+        <article class="features center">
+          <div class="container"><img src="images/icon-access-anywhere.svg" class="center">
+            <p class="content-header">Access your files anywhere.</p>
+            <p class="content-header-description">The ability to use a smartphone, tablet or computer to access files means your files follow you everwhere.</p>
+          </div>
+          <div class="container"><img src="images/icon-security.svg" class="center">
+            <p class="content-header">Security you can trust.</p>
+            <p class="content-header-description">2-factor authentication and user controlled features are some of the services we allow to secure your files.</p>
+          </div>
+          <div class="container"><img src="images/icon-collaboration.svg">
+            <p class="content-header">Real time collaboration</p>
+            <p class="content-header-description">Securly share file, folder with friends,family and co-workers for live collaboration.</p>
+          </div>
+          <div class="container"><img src="images/icon-any-file.svg">
+            <p class="content-header">Store any type of file</p>
+            <p class="content-header-description">Wether you are sharing holidays photos or work documents Floyo has you covered for the files to be securely shared and stored.</p>
+          </div>
+        </article>
+        <article class="sample-description center">
+         
+          <img src="images/illustration-stay-productive.png">
+          <div class="description" style="padding-left: 10px; margin-top: 40px; ">
+            <p class="content-header" style="font-size: 2.2rem; text-align: left; line-height: 50px; text-align-last: left;">Stay productive,<br>  weherever you are</p>
+            <p class="content-header-description" style="width: 70%; font-size: 1.2rem; text-align-last: left; text-align: left;"> Never let location be an issue for your file storage. <br> <br> Floyo has all your storage needs covered for you.
+            </p>
+            <a href="#" style="color: cyan;">See how fylo works.</a>
+          </div>
+        </article>
+        <article class="review center">
+            <img src="images/bg-quotes.png" style="z-index: 0;">
+          <div class="review-container" style="z-index: 1"> <p class="review-description">Fylo has improved our team productivity by a significant magnitude. since making a switch our team has made a giant leap.</p>
+            <br><br>
+            <img src="images/profile-1.jpg" style="float: left;"> 
+            <span style="font-size: .6rem;  padding-top: 0px; padding-left: 10px;"> Swaraj singh dhami</span><br>
+            <span style="font-size: .5rem;  padding-top: 0px; padding-left: 10px;"> Founder and CEO huddle</span>
+          </div>
+          <div class="review-container">
+            <p class="review-description">Fylo has improved our team productivity by a significant magnitude. since making a switch our team has made a giant leap.</p>
+            <br><br>
+            <img src="images/profile-2.jpg" style="float: left;"> 
+            <span style="font-size: .6rem;  padding-top: 0px; padding-left: 10px;"> Swaraj singh dhami</span><br>
+            <span style="font-size: .5rem;  padding-top: 0px; padding-left: 10px;"> Founder and CEO huddle</span>
+          </div>
+          <div class="review-container">
+            <p class="review-description">Fylo has improved our team productivity by a significant magnitude. since making a switch our team has made a giant leap.</p>
+            <br><br>
+            <img src="images/profile-3.jpg" style="float: left;"> 
+            <span style="font-size: .6rem;  padding-top: 0px; padding-left: 10px;"> Swaraj singh dhami</span><br>
+            <span style="font-size: .5rem;  padding-top: 0px; padding-left: 10px;"> Founder and CEO huddle</span>
+          </div>
+        </article>
+
+       
+
+        <footer class="footer" style="position: relative;">
+           <section class="sign-up center" style="margin-bottom:  -300px; margin-top: 100px; z-index: 20; position: absolute; left: 20%; bottom: 600px;">
+          <p style="font-size: 1.8rem; text-align: center; width: 70%; 
+           " class="center">Get early access today</p>
+          <p style="font-size: 1.2rem; text-align: center;width: 70%; " class="center">It takes only a minute to sign up and our free strter tier is extremely generous .
+          If you have any question our support team will be happy to help you.</p>
+          <div style="margin-bottom: 20px ; margin-left: 100px;" class="center">
+            <input type="input" value ="enter email" name="enter email id" id="register-box" style="width: 60%; border-radius: 40px;" class="center">
+            <button style="background-color:  hsl(178, 78%, 64%); color: white; border-radius: 40px;"> Get started for free.</button>
+          </div>
+        </section>
+
+          <div class="footer-div"><span class="zocial-buffer" style="font-size: 2rem; margin: 0px 5px 0px calc(8% + 0px);"></span><span style="font-size: 1.5rem;">Fylo</span> </div>
+            <section class="footer-section" style="display: flex; flex-direction: row; padding: 10px; width: 90%; ">
+              <div class="footer-location"> <span class="entypo-location"  style="font-size: 1.4rem; margin-right: 10px;"></span> <span class="center">21 street , near india gate, central secretriat , new delhi , delhi pin- 214566</span>
+              </div>
+              <div class="footer-contact"><div><span class="zocial-call" style="font-size: 1.2rem;"></span> <span>+91 1123-5467</span></div> <div><span class="entypo-gplus-circled" style="font-size: 1.3rem;"></span><span> contactme.info@myid.com</span></div>
+              </div>
+              <div class="footer-links"><p>About us</p><p>contact us</p> <p>Jobs</p> <p>terms</p> <p>Press</p>
+                <p>Privacy</p> <p>Blog</p>
+              </div>
+              <div class="footer-icons"><ul  style="display: flex; flex-direction: row;padding: 0; margin: 0px auto;">
+                <a href="https://www.twitter.com"><li class="zocial-twitter"></li></a>
+                 <a href="https://www.facebook.com"><li class="brandico-facebook-rect"></li></a>
+  
+                 <a href="https://www.linkedin.com"><li class="zocial-linkedin"></li></a>
+               </ul>
+              </div>
+            </section>
+
+        </footer>
+</body>
+</html>
